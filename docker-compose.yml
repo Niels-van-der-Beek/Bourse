@@ -1,0 +1,10 @@
+version: '2'
+services:
+  bourse_proj:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./Code-Source:/opt/app/Code-Source
+      - ./main.py:/opt/app/main.py
+      - ./requirements.txt:/opt/app/requirements.txt
