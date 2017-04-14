@@ -18,4 +18,7 @@ COPY ./main.py /opt/app/main.py
 
 WORKDIR /opt/app
 
-CMD [ "python", "/opt/app/main.py" ]
+# CMD [ "python", "/opt/app/main.py" ]
+
+RUN gcc ./Code-Source/Prices.c
+CMD [ "./a.out"]
